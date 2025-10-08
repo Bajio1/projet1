@@ -38,6 +38,8 @@ Ajouter par Flo -> le font-face pour les paragraphes
 Ajouter par Flo -> le background-color
 */
   background-color: #846358;
+  background-image: url(image/parchemin-2.jpg);
+  background-size: cover;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -132,6 +134,7 @@ Ajouter par Flo
   margin: 5%;
   background-color: #fde1b2;
   border-radius: 6px;
+  background-image: url(image/parchemin.jpg);
 }
 
 .fan-card img {
