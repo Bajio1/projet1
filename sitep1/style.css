@@ -1,0 +1,63 @@
+.fan{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:3rem 1rem;
+}
+.fan-cards{
+  position:relative;
+  width:640px;
+  height:220px;
+  perspective:1200px; /* profondeur si tu veux ajouter 3D */
+}
+.fan-card{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform-origin:bottom center;
+  width:160px;
+  height:200px;
+  margin-left:-80px; /* centrer horizontalement depuis left:50% */
+  background:linear-gradient(#fff,#ffeedd);
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  transition:transform .25s ease, z-index .1s;
+  cursor:pointer;
+}
+
+/* distribution en éventail via nth-child */
+.fan-card:nth-child(1){ transform: translate(-180px,20px) rotate(-28deg) scale(.7); z-index:1;}
+.fan-card:nth-child(2){ transform: translate(-110px,-6px) rotate(-14deg) scale(.8); z-index:2;}
+.fan-card:nth-child(3){ transform: translate(0px,-12px)       rotate(0deg)   scale(0.9);    z-index:3;}
+.fan-card:nth-child(4){ transform: translate(110px,-6px)  rotate(14deg)  scale(.8); z-index:2;}
+.fan-card:nth-child(5){ transform: translate(180px,20px) rotate(28deg)  scale(.7); z-index:1;}
+
+/* effet hover pour ramener la carte devant */
+.fan-card:nth-child(1):hover{
+  transform: translate(-220px,-30px) rotate(0deg) scale(1.06);
+  z-index:10;
+}
+.fan-card:nth-child(2):hover{
+  transform: translate(-110px,-26px) rotate(0deg) scale(1.06);
+  z-index:10;
+}
+.fan-card:nth-child(3):hover{
+  transform: translate(0,-30px) scale(1.06);
+  z-index:10;
+}
+.fan-card:nth-child(4):hover{
+  transform: translate(110px,-26px) rotate(0deg) scale(1.06);
+  z-index:10;
+}
+.fan-card:nth-child(5):hover{
+  transform: translate(220px,-30px) rotate(0deg) scale(1.06);
+  z-index:10;
+}
+/* réduction d'animation si l'utilisateur préfère moins de mouvement */
+@media (prefers-reduced-motion: reduce){
+  .fan-card, .fan-card:hover{ transition:none; transform:none !important; }
+}
