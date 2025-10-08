@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Windlass';
+  src: url('Windlass.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+/*
+Ajouter par Flo -> le font-face pour les paragraphes
+*/
+
+@font-face {
+  font-family: 'OPTICaslon-Antique';
+  src: url('OPTICaslon-Antique.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+}
+
 .fan {
   width: 100%;
   display: flex;
@@ -14,15 +34,18 @@
 }
 
 .fan-card {
+  /*
+Ajouter par Flo -> le background-color
+*/
+  background-color: #846358;
   position: absolute;
   left: 50%;
   top: 50%;
   transform-origin: bottom center;
   width: 160px;
-  height: 200px;
+  height: 250px;
   margin-left: -80px;
   /* centrer horizontalement depuis left:50% */
-  background: linear-gradient(#fff, #ffeedd);
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -93,4 +116,34 @@
     transition: none;
     transform: none !important;
   }
+}
+
+/*
+Ajouter par Flo
+*/
+
+.fan-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 93%;
+  text-align: center;
+  margin: 5%;
+  background-color: #fde1b2;
+  border-radius: 6px;
+}
+
+.fan-card img {
+  width: 50%;
+  height: auto;
+}
+
+.fan-card h2 {
+  font-size: 1.5em;
+  font-family: "Windlass";
+}
+
+.fan-card p {
+  font-family: "OPTICaslon-Antique";
 }
