@@ -117,23 +117,51 @@
       margin: 2rem;
       line-height: 1.3;
     }
+
+}
+.rewards h1 {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Windlass';
 }
 
-.rewards {
-  display: grid;
+.reward-cards {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 8px;
+    justify-items: center;
     #prix1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       grid-column-start: 3;
     }
     #prix2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       grid-column-start: 2;
       grid-row-start: 2;
+     
     }
     #prix3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       grid-column-start: 4;
       grid-row-start: 2;
+      
+    }
+    img {
+      height: 60%;
+      width: auto;
     }
 }
 
