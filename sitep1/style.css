@@ -11,9 +11,10 @@
   position: relative;
     img {
       max-width: 100%;
-      height: 300px;
+      height: 50rem;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: -10%;
   }
 }
 
@@ -31,27 +32,29 @@
   position: absolute;
   height: 100%;
   width:100%;
-  top: 90%;
+  top: calc(100% + 15rem);
   left: 0;
   display:flex;
   justify-content:center;
   padding-top: 3rem;
 }
+
 .fan-cards{
   position:relative;
   width:640px;
   height:220px;
   perspective:1200px; /* profondeur si tu veux ajouter 3D */
 }
+
 .fan-card{
   font-family: 'Windlass', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   position:absolute;
   left:50%;
   top:50%;
   transform-origin:bottom center;
-  width:160px;
-  height:250px;
-  margin-left:-80px; /* centrer horizontalement depuis left:50% */
+  width:200px;
+  height:300px;
+  margin-left:-130px; /* centrer horizontalement depuis left:50% */
   background:linear-gradient(#fff,#ffeedd);
   border-radius:10px;
   box-shadow:0 8px 20px rgba(0,0,0,0.15);
@@ -75,6 +78,7 @@
   transform: translate(-220px,-30px) rotate(0deg) scale(1.06);
   z-index:10;
 }
+
 .fan-card:nth-child(2):hover{
   transform: translate(-110px,-26px) rotate(0deg) scale(1.06);
   z-index:10;
@@ -100,10 +104,12 @@
   text-align: center;
   border: solid 10px black;
   border-radius: 10px;
-  margin: 5rem;
+  width: 60%;
+  margin: auto;
+  margin-top: 50rem;
     h1 {
       font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      font-size: 1.5rem;
+      font-size: 6rem;
       margin: 1rem;
 
     }
@@ -111,11 +117,13 @@
       font-weight: bold;
       display: block;
       margin-bottom: 1rem;
+      font-size: 2.5rem;
     }
     p {
       text-align: justify;
       margin: 2rem;
       line-height: 1.3;
+      font-size: 2rem;
     }
 
 }
@@ -124,8 +132,9 @@
     justify-content: center;
     height: 100px;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-family: 'Windlass';
+    margin-top: 4rem;
 }
 
 .reward-cards {
@@ -162,6 +171,14 @@
     img {
       height: 60%;
       width: auto;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+      margin: 1rem;
+      text-align: center;
     }
 }
 
