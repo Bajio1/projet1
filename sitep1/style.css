@@ -118,3 +118,23 @@
       line-height: 1.3;
     }
 }
+
+.rewards {
+  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    #prix1 {
+      grid-column-start: 3;
+    }
+    #prix2 {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+    #prix3 {
+      grid-column-start: 4;
+      grid-row-start: 2;
+    }
+}
+
+
