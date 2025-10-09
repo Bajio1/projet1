@@ -7,45 +7,64 @@
     <title>Billeterie Munchkin Tournament 2025</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variable.css">
 </head>
 
 <body>
     <header></header>
-    <main>
-        <h1></h1>
-        <form action="" id="formulaire">
-            <div class="form">
-                <fieldset>
-                    <legend>Tu viens jouer ou mâter ?</legend>
+    <main id="bill-main">
+        <h1>Billetterie</h1>
+        <section id="bill">
+            <article class="bill-card">
+                <div>
+                    <h2>Joueur</h2><img src="image/REDPILL.png" alt="pillule bleu">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sit, dignissimos aliquam. Praesentium iste atque ad totam doloremque. .</p>
+                </div>
+            </article>
+            <article class="bill-card">
+                <div>
+                    <h2>Spectateur</h2><img src="image/BLUEPILL.png" alt="pillule rouge">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Corrupti recusandae possimus obcaecati reiciendis et deleniti odio sint..</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <form action="" id="formulaire">
+                <div class="form">
+                    <fieldset>
+                        <legend>Alors, tu viens jouer ou mâter ?</legend>
 
-                    <input type="radio" value="jouer">
-                    <label for="javascript">GAGNEZ !</label>
+                        <input type="radio" value="jouer">
+                        <label for="javascript">GAGNEZ !</label>
 
-                    <input type="radio" value="regarder">
-                    <label for="python">RELUQUEZ !</label>
-                </fieldset>
-            </div>
-            <div class="form"><label for="Nom">Nom :</label>
-                <input type="text">
-            </div>
-            <div class="form"><label for="Prénom">Prénom :</label>
-                <input type="text">
-            </div>
-            <div class="form"><label for="Mail">Mail :</label>
-                <input type="email">
-            </div>
-            <div class="form"><label for="numero carte">n° Carte :</label>
-                <input type="text">
-            </div>
-            <div class="form"><label for="Validité">Validité :</label>
-                <input type="text">
-            </div>
-            <div class="form"><label for="CRP">Cryptogramme :</label>
-                <input type="text">
-            </div>
-            <button type="submit">Balance la sauce !</button>
-        </form>
-        <img src="" alt="Troupe de guerrier sur paysage">
+                        <input type="radio" value="regarder">
+                        <label for="python">RELUQUEZ !</label>
+                    </fieldset>
+                </div>
+                <div class="form"><label for="Nom">Nom :</label>
+                    <input type="text">
+                </div>
+                <div class="form"><label for="Prénom">Prénom :</label>
+                    <input type="text">
+                </div>
+                <div class="form"><label for="Mail">Mail :</label>
+                    <input type="email">
+                </div>
+                <div class="form"><label for="numero carte">n° Carte :</label>
+                    <input type="text">
+                </div>
+                <div class="form"><label for="Validité">Validité :</label>
+                    <input type="text">
+                </div>
+                <div class="form"><label for="CRP">Cryptogramme :</label>
+                    <input type="text">
+                </div>
+                <button type="submit">Balance la sauce !</button>
+            </form>
+        </section>
+        <img src="image/scene-footer.png" alt="Troupe de guerrier sur paysage" width="50%">
     </main>
     <footer></footer>
 </body>

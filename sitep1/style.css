@@ -121,7 +121,7 @@ Ajouter par Flo -> le background-color
 }
 
 /*
-Ajouter par Flo
+Ajouter par Flo pour les cartes Accueil
 */
 
 .fan-card div {
@@ -135,6 +135,7 @@ Ajouter par Flo
   background-color: #fde1b2;
   border-radius: 6px;
   background-image: url(image/parchemin.jpg);
+  box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
 }
 
 .fan-card img {
@@ -155,28 +156,132 @@ header {
   height: 200px;
 }
 
-main {
+#bill-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    font-size: 4em;
+    color: var(--card-background-1);
+    font-family: "Windlass";
+    text-shadow: 0px 0px 30px #ff0000, 0px 0px 40px rgb(0, 0, 0);
+  }
+
+  img:last-child {
+    margin-top: 4em;
+  }
+
 }
 
+/*
+Ajout flo pour la billetterie et les cartes Billetterie
+*/
+
 #formulaire {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   gap: 1em;
+  padding: 5rem;
+  border: solid var(--card-background-1) 5px;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
 
   .form {
     display: flex;
     flex-direction: column;
+    color: var(--card-background-1);
+    font-size: 2em;
+    font-family: "OPTICaslon-Antique";
+
+    fieldset {
+
+      legend {
+        margin: auto;
+        margin-bottom: 3rem;
+      }
+
+      input,
+      label {
+        display: inline-block;
+        text-align: justify;
+        width: 12rem;
+      }
+    }
 
     input,
-    label,
-    legend {
+    label {
       margin-bottom: 0.5em;
+      width: 20rem;
+      height: 2rem;
+      border-radius: 30px;
     }
   }
+
+  button {
+    background-color: var(--card-background-1);
+    width: 8em;
+    height: 2em;
+    border-radius: 2em;
+    font-family: "OPTICaslon-Antique";
+    font-size: 30px;
+  }
+
+}
+
+#bill {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bill-card {
+  background-image: url(image/parchemin-2.jpg);
+  background-size: cover;
+  width: 16rem;
+  height: 25rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 10rem;
+
+  p {
+    font-size: 1.2em;
+    font-family: "OPTICaslon-Antique";
+  }
+
+  h2 {
+    font-size: 2em;
+    font-family: "Windlass";
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 93%;
+    text-align: center;
+    margin: 5%;
+    background-color: #fde1b2;
+    border-radius: 6px;
+    background-image: url(image/parchemin.jpg);
+    box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
+
+  }
+}
+
+body {
+  background-color: var(--body-background);
 }
