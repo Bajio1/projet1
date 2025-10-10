@@ -36,7 +36,8 @@
   left: 0;
   display:flex;
   justify-content:center;
-  padding-top: 3rem;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
 }
 
 .fan-cards{
@@ -75,24 +76,24 @@
 
 /* effet hover pour ramener la carte devant */
 .fan-card:nth-child(1):hover{
-  transform: translate(-220px,-30px) rotate(0deg) scale(1.06);
+  transform: translate(-22rem,-3rem) rotate(0deg) scale(1.06);
   z-index:10;
 }
 
 .fan-card:nth-child(2):hover{
-  transform: translate(-110px,-26px) rotate(0deg) scale(1.06);
+  transform: translate(-11rem,-2rem) rotate(0deg) scale(1.06);
   z-index:10;
 }
 .fan-card:nth-child(3):hover{
-  transform: translate(0,-30px) scale(1.06);
+  transform: translate(0,-3rem) scale(1.06);
   z-index:10;
 }
 .fan-card:nth-child(4):hover{
-  transform: translate(110px,-26px) rotate(0deg) scale(1.06);
+  transform: translate(11rem,-2rem) rotate(0deg) scale(1.06);
   z-index:10;
 }
 .fan-card:nth-child(5):hover{
-  transform: translate(220px,-30px) rotate(0deg) scale(1.06);
+  transform: translate(22rem,-3rem) rotate(0deg) scale(1.06);
   z-index:10;
 }
 /* réduction d'animation si l'utilisateur préfère moins de mouvement */
@@ -180,6 +181,40 @@
       margin: 1rem;
       text-align: center;
     }
+}
+
+.planning {
+  text-align: center;
+  border: solid 10px black;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  margin-top: 4rem;
+  
+  
+  h1 {
+    font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 6rem;
+    margin: 1rem;
+  }
+  p {
+      text-align: justify;
+      margin: 2rem;
+      line-height: 1.3;
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  img {
+      height: 30rem;
+      width: auto;
+      padding-bottom: 4rem;
+      
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
