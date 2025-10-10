@@ -1,104 +1,123 @@
-
-#card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 35rem;
-  height: 100px;
-  width: 100%;
-  position: relative;
-    img {
-      max-width: 100%;
-      height: 50rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: -10%;
-  }
-}
-
-
 @font-face {
-
   font-family: 'Windlass';
   src: url('Windlass.ttf') format('truetype');
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-display: swap;
 }
 
-.fan{
+/*
+Ajouter par Flo -> le font-face pour les paragraphes
+*/
+
+@font-face {
+  font-family: 'OPTICaslon-Antique';
+  src: url('OPTICaslon-Antique.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+}
+
+.fan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.fan-cards {
+  position: relative;
+  width: 640px;
+  height: 220px;
+  perspective: 1200px;
+  /* profondeur si tu veux ajouter 3D */
+}
+
+.fan-card {
+  /*
+Ajouter par Flo -> le background-color
+*/
+  background-color: #846358;
+  background-image: url(image/parchemin-2.jpg);
+  background-size: cover;
   position: absolute;
-  height: 100%;
-  width:100%;
-  top: calc(100% + 15rem);
-  left: 0;
-  display:flex;
-  justify-content:center;
-  padding-top: 5rem;
-  padding-left: 1.5rem;
-}
-
-.fan-cards{
-  position:relative;
-  width:640px;
-  height:220px;
-  perspective:1200px; /* profondeur si tu veux ajouter 3D */
-}
-
-.fan-card{
-  font-family: 'Windlass', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform-origin:bottom center;
-  width:200px;
-  height:300px;
-  margin-left:-130px; /* centrer horizontalement depuis left:50% */
-  background:linear-gradient(#fff,#ffeedd);
-  border-radius:10px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.15);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  transition:transform .25s ease, z-index .1s;
-  cursor:pointer;
+  left: 50%;
+  top: 50%;
+  transform-origin: bottom center;
+  width: 160px;
+  height: 250px;
+  margin-left: -80px;
+  /* centrer horizontalement depuis left:50% */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: transform .25s ease, z-index .1s;
+  cursor: pointer;
 }
 
 /* distribution en éventail via nth-child */
-.fan-card:nth-child(1){ transform: translate(-180px,20px) rotate(-28deg) scale(.7); z-index:1;}
-.fan-card:nth-child(2){ transform: translate(-110px,-6px) rotate(-14deg) scale(.8); z-index:2;}
-.fan-card:nth-child(3){ transform: translate(0px,-12px)       rotate(0deg)   scale(0.9);    z-index:3;}
-.fan-card:nth-child(4){ transform: translate(110px,-6px)  rotate(14deg)  scale(.8); z-index:2;}
-.fan-card:nth-child(5){ transform: translate(180px,20px) rotate(28deg)  scale(.7); z-index:1;}
+.fan-card:nth-child(1) {
+  transform: translate(-180px, 20px) rotate(-28deg) scale(.7);
+  z-index: 1;
+}
+
+.fan-card:nth-child(2) {
+  transform: translate(-110px, -6px) rotate(-14deg) scale(.8);
+  z-index: 2;
+}
+
+.fan-card:nth-child(3) {
+  transform: translate(0px, -12px) rotate(0deg) scale(0.9);
+  z-index: 3;
+}
+
+.fan-card:nth-child(4) {
+  transform: translate(110px, -6px) rotate(14deg) scale(.8);
+  z-index: 2;
+}
+
+.fan-card:nth-child(5) {
+  transform: translate(180px, 20px) rotate(28deg) scale(.7);
+  z-index: 1;
+}
 
 /* effet hover pour ramener la carte devant */
-.fan-card:nth-child(1):hover{
-  transform: translate(-22rem,-3rem) rotate(0deg) scale(1.06);
-  z-index:10;
+.fan-card:nth-child(1):hover {
+  transform: translate(-22rem, -3rem) rotate(0deg) scale(1.06);
+  z-index: 10;
 }
 
-.fan-card:nth-child(2):hover{
-  transform: translate(-11rem,-2rem) rotate(0deg) scale(1.06);
-  z-index:10;
+.fan-card:nth-child(2):hover {
+  transform: translate(-11rem, -2rem) rotate(0deg) scale(1.06);
+  z-index: 10;
 }
-.fan-card:nth-child(3):hover{
-  transform: translate(0,-3rem) scale(1.06);
-  z-index:10;
+
+.fan-card:nth-child(3):hover {
+  transform: translate(0, -3rem) scale(1.06);
+  z-index: 10;
 }
-.fan-card:nth-child(4):hover{
-  transform: translate(11rem,-2rem) rotate(0deg) scale(1.06);
-  z-index:10;
+
+.fan-card:nth-child(4):hover {
+  transform: translate(11rem, -2rem) rotate(0deg) scale(1.06);
+  z-index: 10;
 }
-.fan-card:nth-child(5):hover{
-  transform: translate(22rem,-3rem) rotate(0deg) scale(1.06);
-  z-index:10;
+
+.fan-card:nth-child(5):hover {
+  transform: translate(22rem, -3rem) rotate(0deg) scale(1.06);
+  z-index: 10;
 }
+
 /* réduction d'animation si l'utilisateur préfère moins de mouvement */
-@media (prefers-reduced-motion: reduce){
-  .fan-card, .fan-card:hover{ transition:none; transform:none !important; }
+@media (prefers-reduced-motion: reduce) {
+
+  .fan-card,
+  .fan-card:hover {
+    transition: none;
+    transform: none !important;
+  }
 }
 
 .Event {
@@ -108,79 +127,89 @@
   width: 60%;
   margin: auto;
   margin-top: 50rem;
-    h1 {
-      font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      font-size: 6rem;
-      margin: 1rem;
 
-    }
-    span {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-    }
-    p {
-      text-align: justify;
-      margin: 2rem;
-      line-height: 1.3;
-      font-size: 2rem;
-    }
+  h1 {
+    font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 6rem;
+    margin: 1rem;
+
+  }
+
+  span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  p {
+    text-align: justify;
+    margin: 2rem;
+    line-height: 1.3;
+    font-size: 2rem;
+  }
 
 }
+
 .rewards h1 {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    align-items: center;
-    font-size: 4rem;
-    font-family: 'Windlass';
-    margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  font-size: 4rem;
+  font-family: 'Windlass';
+  margin-top: 4rem;
 }
 
 .reward-cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
-    justify-items: center;
-    #prix1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-column-start: 3;
-    }
-    #prix2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-column-start: 2;
-      grid-row-start: 2;
-     
-    }
-    #prix3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      grid-column-start: 4;
-      grid-row-start: 2;
-      
-    }
-    img {
-      height: 60%;
-      width: auto;
-    }
-    h2 {
-      font-size: 3rem;
-    }
-    p {
-      font-size: 2rem;
-      margin: 1rem;
-      text-align: center;
-    }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  justify-items: center;
+
+  #prix1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 3;
+  }
+
+  #prix2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+  }
+
+  #prix3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 4;
+    grid-row-start: 2;
+
+  }
+
+  img {
+    height: 60%;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+  }
 }
 
 .planning {
@@ -190,44 +219,29 @@
   width: 60%;
   margin: auto;
   margin-top: 4rem;
-  
-  
+
+
   h1 {
     font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 6rem;
     margin: 1rem;
   }
+
   p {
-      text-align: justify;
-      margin: 2rem;
-      line-height: 1.3;
-      font-size: 2rem;
-      padding: 2rem;
-    }
+    text-align: justify;
+    margin: 2rem;
+    line-height: 1.3;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
   img {
-      height: 30rem;
-      width: auto;
-      padding-bottom: 4rem;
-      
+    height: 30rem;
+    width: auto;
+    padding-bottom: 4rem;
+
   }
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.plan {
-  text-align: center;
-  border: solid 10px black;
-  border-radius: 10px;
-  width: 60%;
-  margin: auto;
-  margin-top: 4rem;
-  h1 {
-    font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 6rem;
-    margin: 1rem;
-  }
+
   div {
     display: flex;
     justify-content: center;
@@ -235,3 +249,222 @@
   }
 }
 
+.plan {
+  text-align: center;
+  border: solid 10px black;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  margin-top: 4rem;
+
+  h1 {
+    font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 6rem;
+    margin: 1rem;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*
+Ajouter par Flo pour les cartes Accueil
+*/
+
+.fan-card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 93%;
+  text-align: center;
+  margin: 5%;
+  background-color: #fde1b2;
+  border-radius: 6px;
+  background-image: url(image/parchemin.jpg);
+  box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
+}
+
+.fan-card img {
+  width: 50%;
+  height: auto;
+}
+
+.fan-card h2 {
+  font-size: 1.5em;
+  font-family: "Windlass";
+}
+
+.fan-card p {
+  font-family: "OPTICaslon-Antique";
+}
+
+header {
+  height: 200px;
+}
+
+#bill-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+
+  h1 {
+    font-size: 4em;
+    color: var(--card-background-1);
+    font-family: "Windlass";
+    text-shadow: 0px 0px 30px #ff0000, 0px 0px 40px rgb(0, 0, 0);
+  }
+
+  img:last-child {
+    margin-top: 4em;
+  }
+
+}
+
+/*
+Ajout flo pour la billetterie et les cartes Billetterie
+*/
+
+#formulaire {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 5rem;
+  border: solid var(--card-background-1) 5px;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    color: var(--card-background-1);
+    font-size: 2em;
+    font-family: "OPTICaslon-Antique";
+
+    fieldset {
+
+      legend {
+        margin: auto;
+        margin-bottom: 3rem;
+      }
+
+      input,
+      label {
+        display: inline-block;
+        text-align: justify;
+        width: 12rem;
+      }
+    }
+
+    input,
+    label {
+      margin-bottom: 0.5em;
+      width: 20rem;
+      height: 2rem;
+      border-radius: 30px;
+    }
+  }
+
+  button {
+    background-color: var(--card-background-1);
+    width: 8em;
+    height: 2em;
+    border-radius: 2em;
+    font-family: "OPTICaslon-Antique";
+    font-size: 30px;
+  }
+
+}
+
+#bill {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bill-card {
+  background-image: url(image/parchemin-2.jpg);
+  background-size: cover;
+  width: 16rem;
+  height: 25rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 10rem;
+
+  p {
+    font-size: 1.2em;
+    font-family: "OPTICaslon-Antique";
+  }
+
+  h2 {
+    font-size: 2em;
+    font-family: "Windlass";
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 93%;
+    text-align: center;
+    margin: 5%;
+    background-color: #fde1b2;
+    border-radius: 6px;
+    background-image: url(image/parchemin.jpg);
+    box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
+
+  }
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+.img-left,
+.img-right {
+  position: fixed;
+  /* Fixe les images par rapport à la fenêtre */
+  top: 50%;
+  /* Centre verticalement */
+  transform: translateY(-50%);
+  /* Ajuste pour un centrage précis */
+  z-index: 1000;
+  /* Place les images au premier plan */
+  max-width: auto;
+  /* Ajustez selon la taille des images */
+  height: 160vh;
+  /* Limite la hauteur pour éviter le débordement */
+}
+
+.img-left {
+  left: 0;
+  /* Colle l'image à gauche */
+}
+
+.img-right {
+  right: 0;
+  /* Colle l'image à droite */
+}
+
+header,
+footer {
+  height: 20vh;
+  background-color: var(--card-background-1);
+}
