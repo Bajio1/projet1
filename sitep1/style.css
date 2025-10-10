@@ -160,6 +160,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10vh;
 
   h1 {
     font-size: 4em;
@@ -284,4 +285,37 @@ Ajout flo pour la billetterie et les cartes Billetterie
 
 body {
   background-color: var(--body-background);
+
+}
+
+.img-left,
+.img-right {
+  position: fixed;
+  /* Fixe les images par rapport à la fenêtre */
+  top: 50%;
+  /* Centre verticalement */
+  transform: translateY(-50%);
+  /* Ajuste pour un centrage précis */
+  z-index: 1000;
+  /* Place les images au premier plan */
+  max-width: auto;
+  /* Ajustez selon la taille des images */
+  height: 160vh;
+  /* Limite la hauteur pour éviter le débordement */
+}
+
+.img-left {
+  left: 0;
+  /* Colle l'image à gauche */
+}
+
+.img-right {
+  right: 0;
+  /* Colle l'image à droite */
+}
+
+header,
+footer {
+  height: 20vh;
+  background-color: var(--card-background-1);
 }
