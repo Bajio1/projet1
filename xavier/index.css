@@ -3,7 +3,6 @@ html,body{
 	padding:0;
 	height:100vh;
 	font-size:3vh;
-	font-size:2;
 	/*font-family:var(--police_montserrat),Arial,sans-serif;*/
 	background-color:#2D2C2C/*var(--body-background);*/
 }
@@ -33,7 +32,7 @@ header section{
 	align-items:center;
 	justify-content:center;
 	z-index:100;
-	/*background-color:#f00;*/
+	background-color:#f00;
 }
 header section h3{
 	font-family:Windlass,Arial,sans-serif;
