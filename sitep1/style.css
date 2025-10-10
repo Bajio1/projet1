@@ -216,5 +216,22 @@
     align-items: center;
   }
 }
-
+.plan {
+  text-align: center;
+  border: solid 10px black;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  margin-top: 4rem;
+  h1 {
+    font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 6rem;
+    margin: 1rem;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
