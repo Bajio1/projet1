@@ -1,26 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variable.css">
 </head>
+
 <body>
-    <section>
-        <div>
-            <img src="image/img_acceuil.png">
-        </div>
-        <div class="fan">
-            <div class="fan-cards">
-                <article class="fan-card">Info</article>
-                <article class="fan-card">Planning</article>
-                <article class="fan-card">Billeterie</article>
-                <article class="fan-card">Plan</article>
-                <article class="fan-card">Contact</article>
+    <article>
+        <section id="card">
+            <div>
+                <img src="image/img_acceuil.png">
             </div>
+            <div class="fan">
+                <div class="fan-cards">
+                    <article class="fan-card">
+                        <div>
+                            <h2>Info</h2><img src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                                alt="Personnage">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </article>
+                    <article class="fan-card">
+                        <div>
+                            <h2>Planning</h2><img
+                                src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                                alt="Personnage">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </article>
+                    <article class="fan-card">
+                        <div>
+                            <h2>Billetterie</h2><img
+                                src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                                alt="Personnage">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </article>
+                    <article class="fan-card">
+                        <div>
+                            <h2>Plan</h2><img src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                                alt="Personnage">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </article>
+                    <article class="fan-card">
+                        <div>
+                            <h2>Contact</h2><img
+                                src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                                alt="Personnage">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="Event">
+            <div>
+                <h1>Evenement</h1>
+                <span>Le 31 octobre</span>
+                <p>Préparez vos bottes de trahison +3 et aiguisez vos épées de mauvaise foi, car le grand Tournoi de
+                    Munchkin arrive ! Héros, voleuse, elfe comptable ou guerrier en sandales, venez affronter d’autres
+                    aventuriers avides de trésors, de niveaux, et surtout de gloire mesquine.
+                    <br>L’honneur ? Laissez-le à la porte, à côté des règles qu’on interprète “à sa façon”. Au programme
+                    : alliances temporaires, coups bas héroïques, et la joie pure de voler le dernier trésor d’un ami en
+                    détresse. Le vainqueur repartira couvert de gloire (et peut-être d’un T-shirt ridicule), tandis que
+                    les perdants repartiront couverts de honte et de malédiction.
+                    <br>Participez à l'évènement en tant que Guerrier ou simple espion !
+                </p>
+            </div>
+        </section>
+    </article>
+    <section class="rewards">
+        <h1>Recompenses</h1>
+        <div class="reward-cards">
+            <div id="prix1">
+                <img src="image/or.png">
+                <h2>1er Prix</h2>
+                <p>Un T-shirt collector "Tournoi de Munchkin"</p>
+            </div>
+            <div id="prix2">
+                <img src="image/argent.png">
+                <h2>2ème Prix</h2>
+                <p>Un set de dés Munchkin édition limitée</p>
+            </div>
+            <div id="prix3">
+                <img src="image/bronze.png">
+                <h2>3ème Prix</h2>
+                <p>Un bon d'achat de 20€ sur notre boutique en ligne</p>
+            </div>
+    </section>
+    <section class="planning">
+        <h1>Planning</h1>
+        <div>
+            <p>Le tournoi de Munchkin approchant à grands pas, la journée s’annonce placée sous le signe de la bonne humeur et de la compétition amicale ! Les participants seront accueillis dès le matin pour s’inscrire et se plonger dans l’univers déjanté du jeu. Après une rapide présentation des règles et des différentes extensions utilisées, les premières manches débuteront, laissant place à des affrontements épiques faits de trahisons, de coups bas et de rires partagés. Des pauses seront prévues tout au long de la journée pour permettre aux joueurs d’échanger leurs stratégies et de se restaurer dans une ambiance détendue. L’après-midi sera consacrée aux phases finales, où les aventuriers les plus rusés tenteront de gravir les niveaux pour atteindre la victoire ultime. La journée se conclura par la remise des prix, récompensant le champion du tournoi ainsi que les participants les plus créatifs ou les plus fair-play. Un moment idéal pour tous les amateurs de jeux de société, entre humour, aventure et esprit de camaraderie !</p>
+            <img src="image/tournoi.png" alt="diag">
         </div>
     </section>
-</body
+    <section class="plan">
+        <h1>Plan</h1>
+        <div>
+            <iframe id="location" title="loc_event" width="300" height="200"
+                src="https://street-map.gosur.com/fr/?ll=50.07954655006097,19.881995599999982&z=20&t=streets">
+            </iframe>
+            <h3>Indication</h3>
+            <p>-<br>-<br>-<br>-<br>-<br>-<br>-<br>-</p>
+        </div>
+    </section>
+</body>
+
 </html>
