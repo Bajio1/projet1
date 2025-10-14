@@ -18,16 +18,39 @@ Ajouter par Flo -> le font-face pour les paragraphes
   font-weight: 800;
 }
 
-.fan {
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 35rem;
+  height: 100px;
   width: 100%;
+  position: relative;
+
+  img {
+    max-width: 100%;
+
+    border-radius: 10px;
+    margin-top: -10%;
+  }
+}
+
+.fan {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: calc(100% + 15rem);
+  left: 0;
   display: flex;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding-top: 5rem;
 }
 
 .fan-cards {
   position: relative;
-  width: 640px;
+  width: 64em;
   height: 220px;
   perspective: 1200px;
   /* profondeur si tu veux ajouter 3D */
@@ -44,8 +67,8 @@ Ajouter par Flo -> le background-color
   left: 50%;
   top: 50%;
   transform-origin: bottom center;
-  width: 160px;
-  height: 250px;
+  width: 16em;
+  height: 25em;
   margin-left: -80px;
   /* centrer horizontalement depuis left:50% */
   border-radius: 10px;
@@ -60,7 +83,7 @@ Ajouter par Flo -> le background-color
 
 /* distribution en éventail via nth-child */
 .fan-card:nth-child(1) {
-  transform: translate(-180px, 20px) rotate(-28deg) scale(.7);
+  transform: translate(-18rem, 20px) rotate(-28deg) scale(.7);
   z-index: 1;
 }
 
@@ -316,10 +339,11 @@ header {
     font-size: 4em;
     color: var(--card-background-1);
     font-family: "Windlass";
-    text-shadow: 0px 0px 30px #ff0000, 0px 0px 40px rgb(0, 0, 0);
+    text-align: center;    
+    text-shadow: 0px 0px 15px #000000, 0px 0px 20px rgb(0, 0, 0), 0px 0px 30px rgb(0, 0, 0);
   }
 
-  img:last-child {
+  .img-footer {
     margin-top: 4em;
   }
 
@@ -468,3 +492,4 @@ footer {
   height: 20vh;
   background-color: var(--card-background-1);
 }
+
