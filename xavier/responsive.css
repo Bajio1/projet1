@@ -5,9 +5,6 @@
 	header section h3{
 		display:none;
 	}
-	header section input:checked + #menu_deroulant + #nav_menu_deroulant{
-		display:block;
-	}
 	header section label{
 		width:5vh;
 		height:5vh;
@@ -60,7 +57,6 @@
 		display:flex;
 		flex-direction:column;
 		justify-content:center;
-		/*background-color:#0f0;*/
 	}
 	header section nav div article:nth-of-type(1) img{
 		width:100%;

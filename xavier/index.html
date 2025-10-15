@@ -15,11 +15,10 @@
 	<body>
 		<header>
 			<section>
-				<input type="checkbox" id="menu_toggle">
-				<label id="menu_deroulant" for="menu_toggle">
+				<label>
 					<img class="img_header" src="./images/list.svg" alt="logo de list">
 				</label>
-				<nav id="nav_menu_deroulant">
+				<nav>
 					<div>
 						<ul>
 							<li><a href="#articles">PROGRAMME</a></li>
@@ -70,3 +69,16 @@
 		</footer>
 	</body>
 </html>
+<script src="./jquery.js"></script>
+<script defer>
+	$("header section label").click(()=>{
+		if($("header section nav").css("display") === "block"){
+			$("header section nav").css("display","none");
+		}else{
+			$("header section nav").css("display","block");
+		}
+	})
+	$("a").click(()=>{
+		$("header section nav").css("display","none");
+	})
+</script>
