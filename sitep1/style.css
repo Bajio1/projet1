@@ -174,6 +174,8 @@ Ajouter par Flo -> le background-color
     margin: 2rem;
     line-height: 1.6em;
     font-size: 2.5rem;
+    text-indent: 2em;
+    padding: 0 5%;
   }
 
 }
@@ -260,6 +262,7 @@ Ajouter par Flo -> le background-color
   box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
   width: 60%;
   margin: auto;
+  margin-top: 3rem;
 
   h1 {
     font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -278,8 +281,9 @@ Ajouter par Flo -> le background-color
     font-size: 1.5em;
     font-family: "OPTICaslon-Antique";
     text-decoration: none;
-    margin: 5rem;
+    margin: 2rem;
     padding: 2rem;
+    text-indent: 2em;
 
   }
 
@@ -308,13 +312,10 @@ Ajouter par Flo -> le background-color
 
 .plan {
   text-align: center;
-  border: solid var(--card-background-1) 5px;
-  border-radius: 20px;
-  box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
   width: 60%;
   margin: auto;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
   h1 {
     font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -334,16 +335,29 @@ Ajouter par Flo -> le background-color
   .indication{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: "OPTICaslon-Antique";
     font-size: 1.5rem;
     line-height: 1.6em;
     color: var(--card-background-1);
 
   }
+  h3{
+    font-size: 3rem;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30rem;
+    padding-top: 4rem;
+    margin-left: 3rem;  
+  }
+
 
   #location {
-    height: 25rem;
-    width: 35rem;
+    height: 40rem;
+    width: 40rem;
     border: solid var(--card-background-1) 5px;
     border-radius: 20px;
     box-shadow: inset 0px 0px 35px 16px rgba(0, 0, 0, 0.25);
@@ -398,8 +412,7 @@ header {
     font-size: 4em;
     color: var(--card-background-1);
     font-family: "Windlass";
-    text-align: center;    
-    text-shadow: 0px 0px 15px #000000, 0px 0px 20px rgb(0, 0, 0), 0px 0px 30px rgb(0, 0, 0);
+    text-align: center;
   }
 
   .img-footer {
