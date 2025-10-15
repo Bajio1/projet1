@@ -31,7 +31,7 @@ a{
     gap: 2em;
     line-height: 1.6em;
     margin:5rem 0 5rem 0 ;
-    width: 50vw;
+    width: 75vw;
     padding: 5rem;
     border: solid var(--card-background-1) 5px;
     border-radius: 20px;
@@ -60,6 +60,16 @@ a{
     }
 }
 
+#map{
+    div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    img{
+        max-width: 20vw;
+    }
+}
+
 #regle {
     align-items: center;
     img {
@@ -72,5 +82,21 @@ a{
     position: relative;
     img{
         position: absolute;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #menu, #regle, #map {
+        padding: 1rem;
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1.2em;
+        }
+}
+
+@media screen and (max-width: 680px){
+    #menu, #regle, #map {
+
     }
 }
