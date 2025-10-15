@@ -1,7 +1,18 @@
 :root{
-    --color_header:#A306B6;
-    --article_box:#D9D9D9;
-    --color_white:white;
-    --police_montserrat:montserrat;
-    --police_source_sans3:source_sans3;
+    --card-background-1: #fde1b2;
+    --card-background-2: #846358;
+    --text-color: #f08c00;
+
+    --height_header:11vh;
+    --height_header_responsive:9vh;
+    --body-background:#2D2C2C;
+    --color_h1:black;
+    --color_h1_border:#f80;
+    --color_h1_text-shadow1:#b38b00;
+    --color_h1_text-shadow2:#a07800;
+    --color_h1_text-shadow3:#8c6600;
+    --color_h1_losange_retour:#888;
+    --color_footer:#FFE1B3;
+    --police_h1:Windlass;
+    --police_defaut:Arial,sans-serif;
 }
