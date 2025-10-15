@@ -573,3 +573,131 @@ footer {
       display: none;
     }
 }
+
+
+
+
+/* Ajout css Xavier pour footer et header*/
+
+html,body{
+	margin:0;
+	padding:0;
+	height:100vh;
+	background-color:var(--body-background);
+}
+
+
+header, footer {
+
+	h1,h2,h3,p{
+		margin:0;
+		padding:0;
+	}
+	h1{
+		font-family:var(--police_h1),var(--police_defaut);
+		font-size:1rem;
+	}
+	h2,a{
+		font-family:var(--police_defaut);
+		font-size:0.6rem;
+		text-decoration:none;
+		color:black;
+	}
+	h3,p{
+		font-family:var(--police_defaut);
+		font-size:0.5rem;
+	}
+}
+
+header{
+	width:100vw;
+	position:fixed;
+	background-color:var(--body-background);
+}
+header section{
+	height:var(--height_header);
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	z-index:100;
+}
+header section input{
+	display:none;
+}
+.img_header{
+	height:100%;
+	aspect-ratio:1 / 1;
+	transform:rotate(-45deg);
+}
+header section label img{
+	display:none;
+}
+header section nav{
+	display:none;
+}
+header section h3{
+	color:var(--color_h1_border);
+}
+header section h1{
+	margin-top:0.5%;
+	color:var(--color_h1);
+	-webkit-text-stroke:0.03em var(--color_h1_border);
+	text-shadow:
+	0.03em 0.03em 0 var(--color_h1_text-shadow1),
+	0.06em 0.06em 0 var(--color_h1_text-shadow2),
+	0.09em 0.09em 0 var(--color_h1_text-shadow3),
+	0.12em 0.12em 0.05em rgba(0,0,0,0.5);
+}
+header section > article{
+	height:5vh;
+	aspect-ratio:1 / 1;
+	right:5vw;
+	position:absolute;
+	transform:rotate(45deg);
+	cursor:pointer;
+	background-color:var(--color_h1_losange_retour);
+}
+footer{
+	height:13vh;
+	/*border-radius:50% 50% 0 0 / 10% 10% 0 0;*/
+	font-family:var(--police_defaut);
+	background-color:var(--color_footer);
+}
+footer section:nth-of-type(1){
+	height:50%;
+	padding-top:0.5%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	/*background-color:#0f0;*/
+}
+footer section:nth-of-type(1) p{
+	height:50%;
+	padding-top:0.2%;
+	text-align:center;
+}
+footer section:nth-of-type(2){
+	height:50%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	padding:0 1vw 0 1vw;
+}
+footer section:nth-of-type(2) article:nth-of-type(1){
+	display:flex;
+	flex-direction:column;
+}
+footer section:nth-of-type(2) article:nth-of-type(2){
+	height:100%;
+	display:flex;
+	align-items:center;
+	gap:0.7vw;
+}
+footer section article img{
+	height:50%;
+	aspect-ratio:1 / 1;
+	cursor:pointer;
+}
+

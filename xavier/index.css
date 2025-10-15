@@ -5,24 +5,30 @@ html,body{
 	font-size:3vh;
 	background-color:var(--body-background);
 }
-h1,h2,h3,p{
-	margin:0;
-	padding:0;
+
+header, footer {
+
+	h1,h2,h3,p{
+		margin:0;
+		padding:0;
+	}
+	h1{
+		font-family:var(--police_h1),var(--police_defaut);
+		font-size:1rem;
+	}
+	h2,a{
+		font-family:var(--police_defaut);
+		font-size:0.6rem;
+		text-decoration:none;
+		color:black;
+	}
+	h3,p{
+		font-family:var(--police_defaut);
+		font-size:0.5rem;
+	}
 }
-h1{
-	font-family:var(--police_h1),var(--police_defaut);
-	font-size:1rem;
-}
-h2,a{
-	font-family:var(--police_defaut);
-	font-size:0.6rem;
-	text-decoration:none;
-	color:black;
-}
-h3,p{
-	font-family:var(--police_defaut);
-	font-size:0.5rem;
-}
+/*--------------------------------------------------------------------------------------------------------*/
+
 header{
 	width:100vw;
 	position:fixed;
