@@ -8,12 +8,45 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="variable.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="police.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
-<body>
-    <header>
-        <h1>HEADER</h1>
-    </header>
+<body id="up">
+<header>
+			<section>
+				<label>
+					<img class="img_header" src="image/list.svg" alt="logo de list">
+				</label>
+				<nav>
+					<div>
+						<ul>
+							<li><a href="#articles">PROGRAMME</a></li>
+							<li><a href="#about">BILLETTERIE</a></li>
+							<li><a href="#contact">PRIX GAGNANT</a></li>
+							<li><a href="#contact">EXPOSANTS</a></li>
+							<li><a href="#contact">FOODTRUCKS</a></li>
+						</ul>
+						<article>
+							<img src="image/tronconneuse.svg" alt="image d'un bonome avec une tronconneuse">
+							<h2>LE 31 OCTOBRE 2025</h2>
+						</article>
+						<article>
+							<img src="image/facebook.svg" alt="logo de facebook">
+							<img src="image/twitter-x.svg" alt="logo de twitter-x">
+							<img src="image/instagram.svg" alt="logo de instagram">
+						</article>
+					</div>
+				</nav>
+				<h3>LE 31 OCTOBRE 2025</h3>
+				<h1>Munchkin</h1>
+				<h1>TOURNAMENT</h1>
+				<article>
+					<a href="#up"><img class="img_header" src="image/arrow-up.svg" alt="logo de arrow-up" src=""></a>
+				</article>
+			</section>
+		</header>
     <main id="bill-main">
         <h1>Informations Pratiques</h1>
         <img src="image/paquetgauche.png" alt="paquet de carte" class="img-left">
@@ -74,8 +107,9 @@
         </section>
         <section id="map">
             <h2>Plan</h2>
-            <img src="image/plantournoi.svg" alt="Plan des lieux du tournoi">
             <div>
+            <img src="image/plantournoi.svg" alt="Plan des lieux du tournoi">
+            
                 <ul>
                     <li>1. Gradins</li>
                     <li>2. Zone de jeu</li>
@@ -94,9 +128,36 @@
        </section>
         <img src="image/scene-footer.png" alt="Troupe de guerrier sur paysage" width="50%" class="img-footer">
     </main>
-    <footer>
-        <H1>FOOTER</H1>
-    </footer>
+		<footer>
+			<section>
+				<h2>AVERTISSEMENT :</h2>
+				<p>Ce jeu comprend des risque.<br>Les organisateur décline tout responsabilité en cas de blessure ou de décès.</p>
+			</section>
+			<section>
+				<article>
+					<h2>Nous contacter :</h2>
+					<p>N° de téléphone : 06 01 23 45 67<br>Mail : démerdezvous@event-munchkin.fr</p>
+				</article>
+				<article>
+					<img src="image/facebook.svg" alt="logo de facebook">
+					<img src="image/twitter-x.svg" alt="logo de twitter-x">
+					<img src="image/instagram.svg" alt="logo de instagram">
+				</article>
+			</section>
+		</footer>
 </body>
 
 </html>
+<script src="./jquery.js"></script>
+<script defer>
+	$("header section label").click(()=>{
+		if($("header section nav").css("display") === "block"){
+			$("header section nav").css("display","none");
+		}else{
+			$("header section nav").css("display","block");
+		}
+	})
+	$("a").click(()=>{
+		$("header section nav").css("display","none");
+	})
+</script>

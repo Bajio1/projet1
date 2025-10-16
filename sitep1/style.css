@@ -211,7 +211,9 @@ Ajouter par Flo -> le background-color
     p {
       font-family: "OPTICaslon-Antique";
     }
+
   
+
   #prix2 {
     display: flex;
     flex-direction: column;
@@ -249,7 +251,6 @@ Ajouter par Flo -> le background-color
     text-align: center;
   }
 }
-
 .planning {
   text-align: center;
   color: var(--card-background-1);
@@ -400,17 +401,13 @@ Ajouter par Flo pour les cartes Accueil
   font-family: "OPTICaslon-Antique";
 }
 
-header {
-  height: 200px;
-}
-
 #bill-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vh;
 
   h1 {
+    padding-top: 12rem;
     font-size: 4em;
     color: var(--card-background-1);
     font-family: "Windlass";
@@ -467,7 +464,7 @@ Ajout flo pour la billetterie et les cartes Billetterie
     label {
       margin-bottom: 0.5em;
       width: 20rem;
-      height: 2rem;
+      height: 1.5rem;
       border-radius: 30px;
     }
   }
@@ -510,6 +507,7 @@ Ajout flo pour la billetterie et les cartes Billetterie
   h2 {
     font-size: 2em;
     font-family: "Windlass";
+    text-shadow: none;
   }
 
   img {
@@ -576,21 +574,42 @@ body {
   /* Colle l'image à droite */
 }
 
-header,
-footer {
-  height: 20vh;
-  background-color: var(--card-background-1);
-}
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1160px) {
     .img-left,
-    .img-right{
+    .img-right,
+    .img-footer{
       display: none;
     }
 }
 
+@media screen and (max-width: 680px){
+    #bill {
+    display: none;
+   }
 
+   #bill-main {
+    h1{
+      padding-top: 6rem;
+    }
 
+    section{
+      
+        width: 90%;
+    }
+  }
+  #formulaire{
+    
+        font-size: 0.8em;
+    fieldset {
+        input {
+          margin: 0;
+        }
+    }
+  .form input {
+    width: auto;
+  }
+  }
+}
 
 /* Ajout css Xavier pour footer et header*/
 
@@ -629,7 +648,7 @@ header, footer {
 header{
 	width:100vw;
 	position:fixed;
-	background-color:var(--body-background);
+	background-color:var(--card-background-1);
 }
 header section{
 	height:var(--height_header);
@@ -670,11 +689,12 @@ header section h1{
 header section > article{
 	height:5vh;
 	aspect-ratio:1 / 1;
-	right:5vw;
+	right:23vw;
 	position:absolute;
 	transform:rotate(45deg);
 	cursor:pointer;
 	background-color:var(--color_h1_losange_retour);
+  border-radius: 10%;
 }
 footer{
 	height:22vh;
