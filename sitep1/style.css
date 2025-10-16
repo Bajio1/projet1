@@ -212,7 +212,7 @@ Ajouter par Flo -> le background-color
       font-family: "OPTICaslon-Antique";
     }
 
-  }
+  
 
   #prix2 {
     display: flex;
@@ -252,7 +252,7 @@ Ajouter par Flo -> le background-color
     margin: 1rem;
     text-align: center;
   }
-
+}
 .planning {
   text-align: center;
   color: var(--card-background-1);
@@ -584,17 +584,27 @@ body {
     display: none;
    }
 
-   #bill-main h1{
+   #bill-main {
+    h1{
       padding-top: 6rem;
     }
 
+    section{
+      
+        width: 90%;
+    }
+  }
   #formulaire{
+    
         font-size: 0.8em;
     fieldset {
         input {
           margin: 0;
         }
     }
+  .form input {
+    width: auto;
+  }
   }
 }
 
@@ -633,7 +643,7 @@ header, footer {
 header{
 	width:100vw;
 	position:fixed;
-	background-color:var(--body-background);
+	background-color:var(--card-background-1);
 }
 header section{
 	height:var(--height_header);
@@ -674,11 +684,12 @@ header section h1{
 header section > article{
 	height:5vh;
 	aspect-ratio:1 / 1;
-	right:13vw;
+	right:23vw;
 	position:absolute;
 	transform:rotate(45deg);
 	cursor:pointer;
 	background-color:var(--color_h1_losange_retour);
+  border-radius: 10%;
 }
 footer{
 	height:13vh;

@@ -66,7 +66,7 @@ a{
         justify-content: space-evenly;
     }
     img{
-        max-width: 20vw;
+        max-width: 25vw;
     }
 }
 
@@ -78,6 +78,11 @@ a{
     }
 }
 
+main > h1 {
+    
+    text-shadow: 0px 0px 15px #000000, 0px 0px 20px rgb(0, 0, 0), 0px 0px 30px rgb(0, 0, 0);
+}
+
 .choice{
     position: relative;
     img{
@@ -85,18 +90,42 @@ a{
     }
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1160px) {    
     #menu, #regle, #map {
-        padding: 1rem;
-        font-size: 1.2em;
-    }
-    p {
-        font-size: 1.2em;
+            padding: 1rem;
+            font-size: 1.2em;
+        width: 90%;
+        
+        p {
+            font-size: 1.2em;
+            }
+        h2 {
+            font-size: 1.5;
         }
+    }
+    #bill {
+        gap: 5vw;
+    }
+    #bill-main {
+        h1 {
+            font-size: 3em;
+        } 
+
+    }
 }
 
 @media screen and (max-width: 680px){
-    #menu, #regle, #map {
-
+    #bill-main {
+            h1 {
+            font-size: 3em;
+        }
     }
+    #menu, #regle, #map {
+        p, li {
+            font-size: 1.2em;
+            }
+        h2 {
+            font-size: 1.5;
+        }
+    } 
 }
