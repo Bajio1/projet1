@@ -2,9 +2,7 @@
 	header section{
 		height:var(--height_header_responsive);
 	}
-	header section h3{
-		display:none;
-	}
+	
 	header section label{
 		width:5vh;
 		height:5vh;
@@ -23,7 +21,7 @@
 	header section nav{
 		margin-top:var(--height_header_responsive);
 		width:100vw;
-		height:40vh;
+		height:80vh;
 		position:absolute;
 		top:0;
 		display:none;
@@ -60,10 +58,11 @@
 		justify-content:center;
 	}
 	header section nav div article:nth-of-type(1) img{
-		width:100%;
-		max-height:80%;
-		aspect-ratio:1 / 1;
-		padding-top:4%;
+			width:100%;
+			max-height:80%;
+			aspect-ratio:1 / 1;
+			padding-top:4%;
+			}
 	}
 	header section nav div article:nth-of-type(1) h2{
 		height:20%;
@@ -79,7 +78,10 @@
 		align-items:center;
 		gap:5%;
 	}
-	header section nav div article:nth-of-type(2) img{
+	header section nav div article:nth-of-type(2) {
+		a {
+			height: 10vh;
+		} img{
 		height:60%;
 		aspect-ratio:1 / 1;
 	}

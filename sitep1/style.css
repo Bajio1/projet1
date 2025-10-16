@@ -638,7 +638,6 @@ header, footer {
 		color:black;
 	}
 	h3,p{
-    width: 200%;
 		font-family:"OPTICaslon-Antique";
 		font-size:1.5rem;
     text-align: left;
@@ -733,10 +732,11 @@ footer section:nth-of-type(2) article:nth-of-type(2){
 	align-items:center;
 	gap:0.7vw;
 }
-footer section article img{
-	height:50%;
+footer section article a {
+  height: 8vh;
+  img{
+	height:100%;
 	aspect-ratio:1 / 1;
 	cursor:pointer;
+  }
 }
-
-
