@@ -3,7 +3,7 @@
     --card-background-1: #fde1b2;
     --card-background-2: #846358;
     --text-color: #f08c00;
-    --height_header:11vh;
+    --height_header:17vh;
     --height_header_responsive:17vh;
     --body-background:#2D2C2C;
     --color_h1:black;
@@ -112,33 +112,130 @@ main > h1 {
         } 
 
     }
+    .Event {
+        width: 70%;
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .rewards{
+        h1{
+            font-size: 5em;
+        }
+        img {
+            height: 50%;
+        }
+    }
+    .planning{
+        width: 70%;
+        h1{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        div{
+            display: flex;
+            flex-direction: column-reverse;
+            img{
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    .plan{
+        width: 70%;
+        h1{
+            font-size: 5rem;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        ul{
+            width: auto;
+        }
+        #location{
+            width: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 680px){
     #bill-main {
             h1 {
-            font-size: 3em;
+            font-size: 2em;
         }
     }
-    #menu, #regle, #map {
-        p, li {
-            font-size: 1.2em;
+    #menu, #regle, #map, .Event, .rewards, .planning, .plan {
+        width: 90%;
+        p {
+            font-size: 1.1em;
+            margin: auto;
             }
-        h2 {
-            font-size: 1.5;
+        li{
+            font-size: 0.8em;
+        }    
+        h2, h1 {
+            font-size: 2em;
+        }
+        h3, h4 {
+            font-size: 1.2em;
+        }
+        span {
+            font-size: 1.3em;
         }
     } 
-
-    footer { 
-        height: 50vh;
-
-        section:nth-of-type(2) {
+    #map div {
         display: flex;
         flex-direction: column;
-
-        article:nth-of-type(2){
-            gap: 14vw ;
+        align-items: center;
+        img{
+            max-width: 100%;
         }
     }
+    .rewards {
+        width: auto;
+     .reward-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 50vw;
+            height: auto;
+        }
+     }
 }
+    .plan .tout {
+        width: auto;
+        margin: auto;
+    }
+
+    footer { 
+            height: 50vh;
+
+            section:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+
+            article:nth-of-type(2){
+                gap: 14vw ;
+                }
+            }
+        }
+    header section h1 {
+    font-size: 0.8em;    
+        } 
+
+    #formulaire {
+    & .form {
+        input, label {
+            width: auto;
+        } }}      
+    nav ul a {
+        font-size: 2.5em;        
+    }
 }

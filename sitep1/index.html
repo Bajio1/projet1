@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accueil Munchkin Tournament</title>
+    <link rel="shortcut icon" href="image/pngegg-1.png" type="image/x-png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="variable.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="police.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
-<body>
+<body id="up">
 <header>
 			<section>
 				<label>
@@ -19,8 +23,8 @@
 				<nav>
 					<div>
 						<ul>
-							<li><a href="#articles">PROGRAMME</a></li>
-							<li><a href="#about">BILLETTERIE</a></li>
+							<li><a href="#planning">PROGRAMME</a></li>
+							<li><a href="billeterie.html">BILLETTERIE</a></li>
 							<li><a href="#rewards">PRIX GAGNANT</a></li>
 							<li><a href="#plan">ACCES</a></li>
 							<li><a href="Info.html">INFORMATIONS</a></li>
@@ -30,17 +34,17 @@
 							<h2>LE 31 OCTOBRE 2025</h2>
 						</article>
 						<article>
-							<img src="image/facebook.svg" alt="logo de facebook">
-							<img src="image/twitter-x.svg" alt="logo de twitter-x">
-							<img src="image/instagram.svg" alt="logo de instagram">
+							<a href="https://www.facebook.com/"><img src="image/facebook.svg" alt="logo de facebook"></a>
+							<a href="https://x.com/"><img src="image/twitter-x.svg" alt="logo de twitter-x"></a>
+							<a href="https://www.instagram.com/"><img src="image/instagram.svg" alt="logo de instagram"></a>
 						</article>
 					</div>
 				</nav>
 				<h3>LE 31 OCTOBRE 2025</h3>
-				<h1>Munchkin</h1>
-				<h1>TOURNAMENT</h1>
+				<a href="index.html" class="logo"><h1>Munchkin</h1>
+				<h1>TOURNAMENT</h1></a>
 				<article>
-					<img class="img_header" src="image/arrow-up.svg" alt="logo de arrow-up">
+					<a href="#up"><img class="img_header" src="image/arrow-up.svg" alt="logo de arrow-up" src=""></a>
 				</article>
 			</section>
 </header>
@@ -48,53 +52,53 @@
     <img src="image/paquetcartedroite.png" alt="paquet de carte" class="img-right">
     <article>
         <section id="card">
-            <div>
+            <div id="tofo">
                 <img src="image/scene-footer.png">
             </div>
             <div class="fan">
                 <div class="fan-cards">
                     <article class="fan-card">
                         <div>
-                            <h2>Info</h2><img src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                            <a href="Info.html"><h2>Info</h2></a><img src="image/panneau.png"
                                 alt="Personnage">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <p>Menu, plan du site, les p'tites infos pratiques.</p>
                         </div>
                     </article>
                     <article class="fan-card">
                         <div>
-                            <h2>Planning</h2><img
-                                src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                            <a href="#planning"><h2>Planning</h2></a><img
+                                src="image/calendar.png"
                                 alt="Personnage">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <p>Ne loupe aucun match, ni l'heure du dejeuner ! </p>
                         </div>
                     </article>
                     <article class="fan-card">
                         <div>
-                            <h2>Billetterie</h2><img
-                                src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                            <a href="billeterie.html"><h2>Billetterie</h2></a><img
+                                src="image/ticket.png"
                                 alt="Personnage">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <p>Viens prendre ta place de joueur ou de spectateur ! </p>
                         </div>
                     </article>
                     <article class="fan-card">
                         <div>
-                            <h2>Acces</h2><img src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                            <a href="#plan"><h2>Acces</h2></a><img src="image/maps (2).png"
                                 alt="Personnage">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <p>Mais ou se passe le Munchkin Tournament? </p>
                         </div>
                     </article>
                     <article class="fan-card">
                         <div>
-                            <h2>Contact</h2><img
-                                src="https://legeekparesseux.fr/wp-content/uploads/2023/05/pngegg-1.png"
+                            <a href="#contact"><h2>Contact</h2></a><img
+                                src="image/bubble.png"
                                 alt="Personnage">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                            <p>Des questions? contacte nous !</p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
-        <section class="Event">
+        <section class="Event" id="Event">
             <div>
                 <h1>Evenement</h1>
                 <span>Le 31 octobre</span>
@@ -109,7 +113,7 @@
             </div>
         </section>
     </article>
-    <section class="rewards">
+    <section class="rewards" id="rewards">
         <h1>Recompenses</h1>
         <div class="reward-cards">
             <div id="prix1">
@@ -128,7 +132,7 @@
                 <p>Un bon d'achat de 20€ sur notre boutique en ligne</p>
             </div>
     </section>
-    <section class="planning">
+    <section class="planning" id="planning">
         <h1>Planning</h1>
         <div>
             <div class="horaires">
@@ -146,7 +150,7 @@
             <img src="image/tournoi.png" alt="diag">
         </div>
     </section>
-    <section class="plan">
+    <section class="plan" id="plan">
         <h1>Acces</h1>
         <div class="tout">
             <iframe id="location" title="loc_event"
@@ -165,17 +169,16 @@
 <footer>
 	<section>
 		<h2>AVERTISSEMENT :</h2>
-		<p>Ce jeu comprend des risque. Les organisateur décline tout responsabilité en cas de blessure ou de décès.</p>
-	</section>
+        <p>Ce jeu comprend des risques.<br>Les organisateurs déclinent toute responsabilité en cas de blessure ou de décès.</p>	</section>
 	<section>
 		<article>
-			<h2>Nous contacter :</h2>
+			<h2 id="contact">Nous contacter :</h2>
 			<p>N° de téléphone : 06 01 23 45 67<br>Mail : démerdezvous@event-munchkin.fr</p>
 		</article>
 		<article>
-			<img src="image/facebook.svg" alt="logo de facebook">
-			<img src="image/twitter-x.svg" alt="logo de twitter-x">
-			<img src="image/instagram.svg" alt="logo de instagram">
+							<a href="https://www.facebook.com/"><img src="image/facebook.svg" alt="logo de facebook"></a>
+							<a href="https://x.com/"><img src="image/twitter-x.svg" alt="logo de twitter-x"></a>
+							<a href="https://www.instagram.com/"><img src="image/instagram.svg" alt="logo de instagram"></a>
 		</article>
 	</section>
 </footer>

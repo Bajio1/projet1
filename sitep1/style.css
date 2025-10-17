@@ -23,18 +23,21 @@ Ajouter par Flo -> le font-face pour les paragraphes
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
   width: 100%;
   position: relative;
   z-index: 1;
 
   img {
     border-radius: 10px;
-    margin-top: -10%;
   }
 }
 
+#tofo{
+  margin-top: 20vh;
+}
+
 .fan {
+  margin-top: 24vh;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -68,7 +71,7 @@ Ajouter par Flo -> le background-color
   height: 28rem;
   /* centrer horizontalement depuis left:50% */
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,7 +152,7 @@ Ajouter par Flo -> le background-color
   box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
   width: 60%;
   margin: auto;
-  margin-top: 20rem;
+  margin-top: 30rem;
 
   h1 {
     font-family: Windlass, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -392,11 +395,12 @@ Ajouter par Flo pour les cartes Accueil
 }
 
 .fan-card h2 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-family: "Windlass";
 }
 
 .fan-card p {
+  font-size: 1.5em;
   font-family: "OPTICaslon-Antique";
 }
 
@@ -588,7 +592,7 @@ body {
 
    #bill-main {
     h1{
-      padding-top: 6rem;
+      padding-top: 12rem;
     }
 
     section{
@@ -648,6 +652,8 @@ header{
 	position:fixed;
 	background-color:var(--card-background-1);
   z-index: 200;
+  
+  box-shadow: 0px 0px 50px 29px rgba(0, 0, 0, 0.47);
 }
 header section{
 	height:var(--height_header);
@@ -672,9 +678,10 @@ header section nav{
 	display:none;
 }
 header section h3{
-	color:var(--color_h1_border);
+	color: black;
 }
 header section h1{
+  font-size: 1.5em;
 	margin-top:0.5%;
 	color:var(--color_h1);
 	-webkit-text-stroke:0.03em var(--color_h1_border);
@@ -738,4 +745,10 @@ footer section article a {
 	aspect-ratio:1 / 1;
 	cursor:pointer;
   }
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

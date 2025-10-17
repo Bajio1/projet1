@@ -86,3 +86,17 @@
 		aspect-ratio:1 / 1;
 	}
 }
+
+@media screen and (max-width:992px){
+	#card {
+		img{
+	display: none;
+		}
+		.fan-cards{
+			display: none;
+		}
+	}
+	.Event {
+		margin-top: 0;
+	}
+}
